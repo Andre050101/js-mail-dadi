@@ -18,7 +18,8 @@ const archivioMail = [                     /*Archivio mail presenti nel sistema*
 ]
 
 const mail = prompt("Prego, inserisca pure la sua e-mail:");    /*Richiesta mail a utente*/
-while(mail.includes("@") === false){
+
+while(mail.includes("@") === false){        /*Validazione mail inserita basata su @*/
     mail = prompt("Siamo spiacenti, la mail inserita risulta non valida, prego la reinserisca pure:");
 }
 let mailPresence = false;   /*Tiene traccia del se la mail appartiene all'array, di base settata su false, poi se troviamo la corrispondenza cambiamo in true*/
