@@ -17,8 +17,12 @@ if(array.length===0)
 else
     console.log("L'array di numeri dispari presenta "+array.length+" elementi, i quali sono: "+array);
 */
+
+
+
 //-snack 6: Stampa il cubo dei primi N numeri, dove N è un numero indicato dall’utente.
-let N = parseInt(prompt("Inserisci numero N:"));
+
+/*let N = parseInt(prompt("Inserisci numero N:"));
 
 while(isNaN(N) || N < 0){
     N = parseInt(prompt("Numero invaido, reinserisci numero N:"));
@@ -29,4 +33,17 @@ for(let i = 0; i <= N; i++){
     console.log("il cubo di "+i+" è "+cubo);
 }
 
+*/
 
+
+//-snack 7: Stampa le potenze di 2 fino a 1000.
+/*
+let potenza = 0;
+let i = 0;
+while(potenza < 1000){
+    potenza = Math.pow(2, i);
+    if(potenza <1000)
+        console.log("2 elevato alla "+i+" vale "+potenza);
+    i++;
+}
+*/
