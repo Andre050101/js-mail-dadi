@@ -18,10 +18,12 @@ const archivioMail = [                     /*Archivio mail presenti nel sistema*
 ]
 
 const mail = prompt("Prego, inserisca pure la sua e-mail:");    /*Richiesta mail a utente*/
-
+while(mail.includes("@") === false){
+    mail = prompt("Siamo spiacenti, la mail inserita risulta non valida, prego la reinserisca pure:");
+}
 let mailPresence = false;   /*Tiene traccia del se la mail appartiene all'array, di base settata su false, poi se troviamo la corrispondenza cambiamo in true*/
 
-for(let i = 0; i < archivioMail.length; i++){       /*Controllo di appartenenza della mail all'aray, con eventuale conseguente aggiornamento di mailPresence*/
+for(let i = 0; i < archivioMail.length; i++){       /*Controllo di appartenenza della mail all'array, con eventuale conseguente aggiornamento di mailPresence*/
     if(archivioMail[i] === mail)
         mailPresence = true;
 }
